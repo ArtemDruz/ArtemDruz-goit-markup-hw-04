@@ -22,6 +22,7 @@ ul, ol {
     margin: 0px;
     padding-left: 0px;
 }
+
 .container {
     width: 1200px;
     padding-left: 15px;
@@ -119,7 +120,11 @@ padding-bottom: 94px;
 
 /* hiro */
 .hero{
-    background-color: var(--background-color);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Img_bf_01.jpg);
+    background-repeat: no-repeat;
+    border-style: cover;
+    background-position: center;
+    background-color: #C4C4C4;
     letter-spacing: 0.06em;
     text-align: center;    
     padding-top: 200px;
@@ -235,8 +240,25 @@ padding-bottom: 94px;
     text-align: center;
     margin-top: 10px;
 }
-
-
+.team-soc-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+}
+.team-soc-li {
+    width: 44px;
+    height: 44px;
+}
+.team-soc-li:not(:last-child) {
+    margin-right: 10px;
+}
+.team-soc-link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    border-radius: 50%;
+}
 /* footer */
 
 .footer{
@@ -264,7 +286,8 @@ padding-bottom: 94px;
     text-decoration: none;
 }
 .address-li:not(:last-child) {
-    margin-bottom: 12px;
+    margin-bottom: 9px; 
+    /* в мене на мекеті показує 12px */
 }
 .address-link {
     color: var(--white-color);
