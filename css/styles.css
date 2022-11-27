@@ -267,9 +267,11 @@ padding-bottom: 94px;
 }
 .team-soc-link:hover {
     background-color: var(--accent-color);
-    fill: #FFFFFF;
+    color: #FFFFFF;
 }
-
+.team-soc-svg:hover {
+    fill: currentColor;
+}
 /* footer */
 
 .footer{
