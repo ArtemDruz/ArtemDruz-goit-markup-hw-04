@@ -91,7 +91,7 @@ padding-bottom: 94px;
     text-decoration: none;
 }
 .site-nav .link:hover,
-.site-nav .link:focus{
+.site-nav .link:focus {
     color: var(--accent-color);
 }
 
@@ -99,7 +99,7 @@ padding-bottom: 94px;
     display: flex;
     margin-left: auto;
 }
-.contact .link{
+.contact .contact-link {
     display: block;
     color: var(--primary-text-color);
     font-weight: 500;
@@ -183,6 +183,26 @@ padding-bottom: 94px;
 .privileges-li:not(:last-child){
     margin-right: 30px;
 }
+.privileges-div {
+    height: 120px;
+    display: flex;
+    background-color: #F5F4FA;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+}
+
+.privileges-link {
+    width: 70px;
+    height: 70px;
+    display: flex;
+
+}
+.privileges-svg {
+    
+}
+
 .privileges-title {
     font-size: 14px;
     color: var(--second-text-color);
@@ -262,16 +282,21 @@ padding-bottom: 94px;
     justify-content: center;
     align-items: center;
 }
-.team-soc-svg {
-    fill: #AFB1B8;
-}
+
+
 .team-soc-link:hover {
     background-color: var(--accent-color);
     color: #FFFFFF;
 }
-.team-soc-svg:hover {
+.team-soc-link:hover .team-soc-svg{
     fill: currentColor;
 }
+.team-soc-svg {
+    fill: #AFB1B8;}
+
+    /* partners */
+    
+
 /* footer */
 
 .footer{
@@ -321,8 +346,54 @@ padding-bottom: 94px;
 .address-contact:focus {
     color: var(--accent-color);
 }
+/* друга частина футера */
+.footer-position {
+    display: flex;
+}
+.footer-soc {
+    margin-left: 70px;
+    margin-top: 15px;
+}
+.footer-p {
+font-weight: 700;
+line-height: 1.14;
+text-transform: uppercase;
 
+color: var(--white-color);
+}
 
+.footer-soc-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.footer-soc-li {
+    width: 44px;
+    height: 44px;
+}
+.footer-soc-li:not(:last-child) {
+    margin-right: 10px;
+}
+.footer-soc-link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.footer-soc-link:hover {
+    background-color: var(--accent-color);
+    color: #FFFFFF;
+}
+.footer-soc-link:hover .footer-soc-svg{
+    fill: currentColor;
+}
+.footer-soc-svg {
+    fill: var(--white-color);}
 /* portfolio */
 .button-ul{
     display: flex;
