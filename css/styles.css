@@ -262,13 +262,14 @@ padding-bottom: 94px;
     justify-content: center;
     align-items: center;
 }
+.team-soc-svg {
+    fill: #AFB1B8;
+}
 .team-soc-link:hover {
     background-color: var(--accent-color);
     fill: #FFFFFF;
 }
-.team-soc-link:hover .team-soc-svg {
-    
-}
+
 /* footer */
 
 .footer{
